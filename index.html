@@ -1,0 +1,960 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bruno Lima — Desenvolvedor Full Stack e Inteligência Artificial. Crio sites profissionais, landing pages, sistemas web e soluções com IA que unem estratégia, design e tecnologia para gerar oportunidades reais."
+    />
+    <meta name="author" content="Bruno Lima" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="theme-color" content="#014040" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Bruno Lima — Portfólio" />
+    <meta
+      property="og:title"
+      content="Bruno Lima | Full Stack & Inteligência Artificial — Soluções Digitais Inteligentes"
+    />
+    <meta
+      property="og:description"
+      content="Tecnologia, design e Inteligência Artificial para fortalecer marcas, automatizar processos e transformar presença digital em crescimento real."
+    />
+    <meta
+      property="og:url"
+      content="https://Bruno-FullStack-AI.github.io/Portfolio-2026-Bruno-Full-tack/"
+    />
+    <meta
+      property="og:image"
+      content="https://Bruno-FullStack-AI.github.io/Portfolio-2026-Bruno-Full-tack/assets/images/bruno-professional.jpg"
+    />
+    <meta property="og:image:alt" content="Retrato de Bruno Lima" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Bruno Lima | Full Stack & Inteligência Artificial"
+    />
+    <meta
+      name="twitter:description"
+      content="Sites, sistemas e automações com IA — soluções digitais inteligentes para empresas que querem crescer com tecnologia."
+    />
+    <meta
+      name="twitter:image"
+      content="https://Bruno-FullStack-AI.github.io/Portfolio-2026-Bruno-Full-tack/assets/images/bruno-professional.jpg"
+    />
+    <title>
+      Bruno Lima | Desenvolvedor Full Stack &amp; Inteligência Artificial
+    </title>
+    <link
+      rel="canonical"
+      href="https://Bruno-FullStack-AI.github.io/Portfolio-2026-Bruno-Full-tack/"
+    />
+    <link
+      rel="icon"
+      id="site-favicon"
+      href="assets/logo/bruno-mark-light.svg"
+      type="image/svg+xml"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/avatar/bruno-avatar.png"
+      imagesizes="(max-width: 850px) 90vw, 48vw"
+      type="image/png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          localStorage.getItem("portfolio-theme") ||
+          (matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light");
+      } catch {}
+      document.documentElement.classList.add("js");
+      window.__portfolioFallback = setTimeout(
+        () => document.documentElement.classList.remove("js"),
+        5000,
+      );
+    </script>
+    <script type="application/ld+json" id="person-schema">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Bruno Lima",
+        "jobTitle": "Desenvolvedor Full Stack e Especialista em Inteligência Artificial",
+        "email": "mailto:contato@brunolima.dev",
+        "sameAs": [
+          "https://github.com/Bruno-FullStack-AI",
+          "https://www.linkedin.com/in/bruno-lima-fullstack-ia/",
+          "https://www.instagram.com/brunolima.dev/"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "CE",
+          "addressCountry": "BR"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <div
+      class="loader"
+      id="site-loader"
+      role="status"
+      aria-label="Carregando portfólio"
+    >
+      <div class="loader__identity">
+        <img
+          data-brand-mark
+          src="assets/logo/bruno-mark-light.svg"
+          width="58"
+          height="58"
+          alt=""
+        /><span>Bruno Lima</span><small>Preparando a experiência</small>
+      </div>
+      <div class="loader__progress"><i></i></div>
+    </div>
+
+    <header class="site-header" id="inicio">
+      <nav class="navbar shell" aria-label="Navegação principal">
+        <a class="brand" href="#home" aria-label="Bruno Lima — início"
+          ><img
+            data-brand-mark
+            src="assets/logo/bruno-mark-light.svg"
+            width="38"
+            height="38"
+            alt=""
+          /><span
+            ><strong data-brand-name>Bruno Lima</strong
+            ><small>Full Stack &amp; IA</small></span
+          ></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home">Home</a><a href="#sobre">Sobre</a
+          ><a href="#tecnologias">Tecnologias</a><a href="#projetos">Projetos</a
+          ><a href="#servicos">Serviços</a><a href="#experiencia">Experiência</a
+          ><a href="#contato">Contato</a>
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Ativar tema escuro"
+            title="Alternar tema"
+          >
+            <span aria-hidden="true" class="theme-toggle__moon">☾</span
+            ><span aria-hidden="true" class="theme-toggle__sun">☀</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero__stars" aria-hidden="true"></div>
+        <div class="hero__inner shell">
+          <div class="hero__copy reveal reveal--left">
+            <p class="kicker"><span></span> Olá, eu sou</p>
+            <h1 id="hero-title">Bruno <em>Lima</em></h1>
+            <p class="hero__role">
+              Desenvolvedor
+              <span id="typing-role" aria-live="polite">Full Stack</span
+              ><i aria-hidden="true"></i>
+            </p>
+            <p class="hero__lead">
+              Desenvolvo sites, landing pages e sistemas web
+              <strong style="color:var(--color-accent)">potencializados por Inteligência Artificial</strong>
+              que unem estratégia, experiência e tecnologia para fortalecer
+              marcas e transformar presença digital em oportunidades reais.
+            </p>
+            <p class="hero__manifesto">
+              Sua presença digital transmite a mesma qualidade que sua empresa
+              entrega?
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="#projetos"
+                >Conhecer projetos <span>↘</span></a
+              ><a class="button button--secondary" href="#contato"
+                >Falar sobre meu projeto <span>↗</span></a
+              >
+            </div>
+            <div class="hero__availability">
+              <i></i
+              ><span>Disponível para projetos no Brasil e no exterior — com IA</span>
+            </div>
+          </div>
+          <div class="hero__visual reveal reveal--right" data-tilt-area>
+            <picture
+              ><source
+                data-profile-source="main"
+                type="image/png"
+                srcset="assets/avatar/bruno-avatar.png"
+                sizes="(max-width: 850px) 90vw, 48vw" />
+              <img
+                data-profile-image="main"
+                class="hero__portrait"
+                src="assets/avatar/bruno-avatar.png"
+                width="1024"
+                height="1536"
+                alt="Avatar de Bruno Lima — Full Stack & IA"
+                fetchpriority="high"
+                decoding="async"
+            /></picture>
+            <div class="hero__badge">
+              <strong>Desde 2022</strong
+              ><span>atuando e desenvolvendo soluções digitais</span>
+            </div>
+            <button
+              class="hero__avatar"
+              type="button"
+              aria-label="Alternar entre foto e avatar"
+              aria-pressed="true"
+              title="Alternar entre foto e avatar"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 7h-9.5a5.5 5.5 0 0 0-5.12 3.48" />
+                <path d="m17 4 3 3-3 3" />
+                <path d="M4 17h9.5a5.5 5.5 0 0 0 5.12-3.48" />
+                <path d="m7 20-3-3 3-3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#sobre"
+          ><span>Explore</span><i aria-hidden="true"></i
+        ></a>
+      </section>
+
+      <section
+        class="section about shell"
+        id="sobre"
+        aria-labelledby="about-title"
+      >
+        <header class="section-heading reveal">
+          <p class="kicker"><span></span> Sobre mim</p>
+          <h2 id="about-title">
+            Curiosidade para explorar.<br /><em>Inteligência para construir.</em>
+          </h2>
+        </header>
+        <div class="about__grid">
+          <figure class="about__photo reveal reveal--left">
+            <picture
+              ><source
+                type="image/png"
+                srcset="assets/images/bruno-professional.jpg"
+                sizes="(max-width: 850px) 90vw, 42vw" />
+              <img
+                src="assets/images/bruno-professional.jpg"
+                width="1086"
+                height="1448"
+                alt="Retrato profissional de Bruno Lima — Especialista em Full Stack e IA"
+                loading="lazy"
+                decoding="async"
+            /></picture>
+            <figcaption>
+              Tecnologia com propósito e IA aplicada a negócios reais.
+            </figcaption>
+          </figure>
+          <div class="about__copy reveal reveal--right">
+            <p class="about__intro">
+              Sou desenvolvedor Full Stack e Especialista em Inteligência
+              Artificial. Uno engenharia, criatividade e visão de negócio para
+              transformar ideias em produtos digitais inteligentes.
+            </p>
+            <p>
+              Minha trajetória conecta desenvolvimento web, automação, dados e
+              Inteligência Artificial. Da mecatrônica à robótica — como no
+              projeto com a Seara — aprendi que tecnologia só faz sentido quando
+              resolve problemas reais de pessoas e empresas. Hoje aplico essa
+              visão multidisciplinar para criar interfaces, sistemas e
+              automações com IA.
+            </p>
+            <p>
+              Gosto de explorar problemas complexos, estruturar lógicas e usar
+              IA para automatizar o que é repetitivo — liberando tempo para o
+              que importa: estratégia e crescimento. Cada projeto é pensado para
+              ser escalável, seguro e pronto para evoluir com o seu negócio.
+            </p>
+            <div class="about__principles">
+              <article>
+                <strong>01</strong><span>IA + Estratégia geram escala.</span>
+              </article>
+              <article>
+                <strong>02</strong><span>Automação libera potencial humano.</span>
+              </article>
+              <article>
+                <strong>03</strong><span>Tecnologia que converte em resultado.</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="manifesto"
+        id="manifesto"
+        aria-labelledby="manifesto-title"
+      >
+        <div class="manifesto__sticky">
+          <div class="manifesto__visual" aria-hidden="true">
+            <div class="manifesto__orb"></div>
+            <div class="manifesto__wolf-mark">
+              <img
+                data-brand-mark
+                src="assets/logo/bruno-mark-light.svg"
+                width="180"
+                height="180"
+                alt=""
+              />
+            </div>
+            <div class="manifesto__path"></div>
+          </div>
+          <div class="manifesto__content shell">
+            <p class="kicker"><span></span> Manifesto</p>
+            <h2 id="manifesto-title">
+              Inteligência transforma<br /><em>limites em possibilidades.</em>
+            </h2>
+            <div class="manifesto__scenes">
+              <p class="is-active" data-scene="0">
+                Questionar o que parece definitivo.
+              </p>
+              <p data-scene="1">Explorar além da primeira resposta com IA.</p>
+              <p data-scene="2">Conectar código, dados e inteligência.</p>
+              <p data-scene="3">Construir soluções que aprendem e evoluem.</p>
+            </div>
+            <div class="manifesto__progress"><i></i></div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section technologies shell"
+        id="tecnologias"
+        aria-labelledby="tech-title"
+      >
+        <header class="section-heading reveal">
+          <p class="kicker"><span></span> Tecnologias</p>
+          <h2 id="tech-title">
+            Stack escolhida pelo<br /><em>contexto e pela inteligência do projeto.</em>
+          </h2>
+          <p>
+            Conhecimento aplicado para construir experiências responsivas,
+            acessíveis, seguras e <strong>potencializadas por IA</strong> — prontas para escalar sem porcentagens
+            artificiais.
+          </p>
+        </header>
+        <div class="tech-grid">
+          <article class="tech-card reveal" data-tilt>
+            <span>01</span>
+            <h3>Front-end</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>React / Next.js</li>
+              <li>APIs</li>
+              <li>Responsividade</li>
+            </ul>
+          </article>
+          <article class="tech-card reveal" data-tilt>
+            <span>02</span>
+            <h3>Back-end &amp; Dados</h3>
+            <ul>
+              <li>Python</li>
+              <li>Node.js</li>
+              <li>JSON &amp; APIs</li>
+              <li>Automação de processos</li>
+              <li>Banco de Dados</li>
+              <li>Integrações</li>
+            </ul>
+          </article>
+          <article class="tech-card reveal" data-tilt>
+            <span>03</span>
+            <h3>Inteligência Artificial</h3>
+            <ul>
+              <li>Chatbots &amp; Assistentes</li>
+              <li>OpenAI / Gemini APIs</li>
+              <li>Automação inteligente</li>
+              <li>Análise de dados com IA</li>
+              <li>Machine Learning</li>
+              <li>Prompts &amp; Workflows</li>
+            </ul>
+          </article>
+          <article class="tech-card reveal" data-tilt>
+            <span>04</span>
+            <h3>UI/UX &amp; Produto</h3>
+            <ul>
+              <li>Interfaces</li>
+              <li>Prototipação</li>
+              <li>Design System</li>
+              <li>Acessibilidade</li>
+              <li>Experiência do usuário</li>
+              <li>Conversão</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="section projects"
+        id="projetos"
+        aria-labelledby="projects-title"
+      >
+        <div class="shell">
+          <header class="section-heading section-heading--split reveal">
+            <div>
+              <p class="kicker"><span></span> Projetos conceituais</p>
+              <h2 id="projects-title">
+                Ideias transformadas em<br /><em>soluções inteligentes.</em>
+              </h2>
+            </div>
+            <p>
+              Estudos que demonstram como estratégia, interface, dados e
+              Inteligência Artificial podem resolver desafios de presença digital,
+              gestão e automação. Nenhum card representa um cliente ou entrega
+              comercial concluída.
+            </p>
+          </header>
+          <div
+            class="project-filters"
+            role="group"
+            aria-label="Filtrar projetos"
+          >
+            <button
+              class="is-active"
+              type="button"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              Todos</button
+            ><button type="button" data-filter="web" aria-pressed="false">
+              Web</button
+            ><button type="button" data-filter="systems" aria-pressed="false">
+              Sistemas</button
+            ><button type="button" data-filter="data" aria-pressed="false">
+              Dados</button
+            ><button
+              type="button"
+              data-filter="experimental"
+              aria-pressed="false"
+            >
+              Experimental
+            </button>
+          </div>
+          <div class="projects-grid" id="projects-grid"></div>
+        </div>
+      </section>
+
+      <section
+        class="section services shell"
+        id="servicos"
+        aria-labelledby="services-title"
+      >
+        <header class="section-heading reveal">
+          <p class="kicker"><span></span> Serviços</p>
+          <h2 id="services-title">
+            Soluções digitais &amp; IA alinhadas aos<br /><em
+              >objetivos da sua empresa.</em
+            >
+          </h2>
+          <p>
+            Seu site apenas apresenta sua empresa ou conduz o visitante até uma
+            ação?
+          </p>
+        </header>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <span class="service-card__number">01</span>
+            <h3>Landing Pages de Alta Conversão</h3>
+            <p>
+              Páginas focadas em oferta, prova social e conversão — com copy
+              estratégica, performance e integração com IA para qualificação.
+            </p>
+            <a class="service-card__link" href="#contato"
+              >Transformar cliques em oportunidades <b>↗</b></a
+            >
+          </article>
+          <article class="service-card reveal">
+            <span class="service-card__number">02</span>
+            <h3>Sites Institucionais com IA</h3>
+            <p>
+              Sites profissionais que fortalecem credibilidade, SEO e facilitam
+              o contato — com chat inteligente e atendimento 24h.
+            </p>
+            <a class="service-card__link" href="#contato"
+              >Fortalecer minha presença digital <b>↗</b></a
+            >
+          </article>
+          <article class="service-card reveal">
+            <span class="service-card__number">03</span>
+            <h3>Sistemas Web Inteligentes</h3>
+            <p>
+              Sistemas sob medida que organizam processos e usam IA para
+              automatizar tarefas, prever demandas e escalar sua operação.
+            </p>
+            <a class="service-card__link" href="#contato"
+              >Modernizar meus processos <b>↗</b></a
+            >
+          </article>
+          <article class="service-card reveal">
+            <span class="service-card__number">04</span>
+            <h3>Dashboards &amp; Dados com IA</h3>
+            <p>
+              Painéis que transformam dados em decisões — com insights
+              automáticos, alertas inteligentes e previsões.
+            </p>
+            <a class="service-card__link" href="#contato"
+              >Dar visibilidade aos meus dados <b>↗</b></a
+            >
+          </article>
+          <article class="service-card reveal">
+            <span class="service-card__number">05</span>
+            <h3>UI/UX + IA</h3>
+            <p>
+              Interfaces intuitivas e personalizadas que aprendem com o usuário
+              para conduzir com clareza até a conversão.
+            </p>
+            <a class="service-card__link" href="#contato"
+              >Melhorar minha experiência digital <b>↗</b></a
+            >
+          </article>
+          <article class="service-card reveal">
+            <span class="service-card__number">06</span>
+            <h3>Automação &amp; Agentes de IA</h3>
+            <p>
+              Chatbots, agentes e workflows que atendem, qualificam, agendam e
+              vendem — reduzindo esforço manual e aumentando eficiência.
+            </p>
+            <a class="service-card__link" href="#contato"
+              >Criar meu agente de IA <b>↗</b></a
+            >
+          </article>
+          <article class="service-card reveal service-card--cta">
+            <span class="service-card__number">07</span>
+            <h3>Desenvolvimento sob medida com IA</h3>
+            <p>
+              Uma solução personalizada a partir do seu desafio, contexto e
+              objetivo — combinando Full Stack e Inteligência Artificial.
+            </p>
+            <a class="service-card__link" href="#contato"
+              >Falar sobre meu projeto <b>↗</b></a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="section journey"
+        id="experiencia"
+        aria-labelledby="journey-title"
+      >
+        <div class="shell journey__layout">
+          <header class="section-heading reveal">
+            <p class="kicker"><span></span> Minha trajetória</p>
+            <h2 id="journey-title">
+              Experiências que formaram<br /><em>minha visão em tecnologia e IA.</em>
+            </h2>
+            <p>
+              Mecatrônica, robótica, indústria, dados, empreendedorismo e
+              Inteligência Artificial contribuíram para uma visão
+              multidisciplinar — da automação física à automação inteligente.
+            </p>
+          </header>
+          <ol class="timeline">
+            <li class="reveal">
+              <time>2022</time>
+              <div>
+                <h3>Programação como nova direção</h3>
+                <p>
+                  Início aprofundado em desenvolvimento web, lógica e
+                  construção de interfaces modernas.
+                </p>
+              </div>
+            </li>
+            <li class="reveal">
+              <time>2023</time>
+              <div>
+                <h3>Dados, Python e IA</h3>
+                <p>
+                  Exploração de Python, manipulação de dados, automação e
+                  primeiros modelos de Inteligência Artificial em ambientes
+                  educacionais.
+                </p>
+              </div>
+            </li>
+            <li class="reveal">
+              <time>2024</time>
+              <div>
+                <h3>Full Stack + Inteligência Artificial</h3>
+                <p>
+                  Unificação de front-end, back-end e IA — criando sistemas,
+                  chatbots, automações inteligentes e produtos digitais completos.
+                </p>
+              </div>
+            </li>
+            <li class="reveal">
+              <time>Experiências Reais</time>
+              <div>
+                <h3>Visão multidisciplinar &amp; Robótica</h3>
+                <p>
+                  Contato com mecatrônica, robótica (projeto Seara), indústria
+                  e empreendedorismo — base para resolver problemas complexos
+                  com tecnologia.
+                </p>
+              </div>
+            </li>
+            <li class="reveal">
+              <time>Atualidade</time>
+              <div>
+                <h3>Full Stack &amp; IA na prática</h3>
+                <p>
+                  Desenvolvimento de sites, sistemas e agentes de IA para
+                  empresas, com foco em conversão, automação e crescimento
+                  escalável no Brasil e exterior.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <div class="shell credentials" aria-labelledby="credentials-title">
+          <div class="credentials__heading reveal">
+            <p class="kicker"><span></span> Formação contínua</p>
+            <h2 id="credentials-title">
+              Base técnica e aprendizado<br /><em>aplicado com IA na prática.</em>
+            </h2>
+            <p>
+              Conhecimentos construídos por cursos, formação técnica e
+              exploração responsável de diferentes áreas.
+            </p>
+          </div>
+          <div class="credentials__grid">
+            <article class="credential-card reveal">
+              <span>01</span>
+              <h3>Técnico &amp; Mecatrônica</h3>
+              <p>
+                Base em raciocínio lógico, sistemas e resolução estruturada de
+                problemas — da automação física à digital.
+              </p>
+            </article>
+            <article class="credential-card reveal">
+              <span>02</span>
+              <h3>Full Stack</h3>
+              <p>
+                Formação completa em HTML, CSS, JavaScript, React e Node.js para
+                construir produtos digitais de ponta a ponta.
+              </p>
+            </article>
+            <article class="credential-card reveal">
+              <span>03</span>
+              <h3>Python, Dados &amp; IA</h3>
+              <p>
+                Manipulação de dados, automações, integração com APIs de IA
+                (OpenAI, Gemini) e criação de agentes inteligentes.
+              </p>
+            </article>
+            <article class="credential-card reveal">
+              <span>04</span>
+              <h3>IA Aplicada &amp; Automação</h3>
+              <p>
+                Desenvolvimento de chatbots, workflows inteligentes e soluções
+                que aprendem e evoluem com o negócio.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section contact"
+        id="contato"
+        aria-labelledby="contact-title"
+      >
+        <div class="shell contact__grid">
+          <div class="contact__copy reveal reveal--left">
+            <p class="kicker"><span></span> Conversa estratégica</p>
+            <h2 id="contact-title">
+              Vamos transformar seu projeto<br /><em>com inteligência?</em>
+            </h2>
+            <p>
+              Uma conversa estratégica para entender sua empresa, seus objetivos
+              e como a Inteligência Artificial pode acelerar seu crescimento
+              digital.
+            </p>
+            <p class="contact__instruction">
+              <strong>Sua próxima oportunidade inteligente começa aqui.</strong
+              ><br />Conte sobre sua ideia, empresa ou desafio. Vou analisar
+              como Full Stack e IA podem acelerar seus resultados e propor a
+              solução mais adequada ao seu objetivo.
+            </p>
+          </div>
+          <form
+            class="contact-form reveal reveal--right"
+            id="contact-form"
+            action="https://formsubmit.co/contato@brunolima.dev"
+            method="POST"
+            data-endpoint="https://formsubmit.co/ajax/contato@brunolima.dev"
+            novalidate
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="Novo contato pelo portfólio de Bruno Lima"
+            />
+            <input type="hidden" name="_template" value="table" />
+            <div class="form-honeypot" aria-hidden="true">
+              <label for="contact-website">Não preencha este campo</label
+              ><input
+                id="contact-website"
+                name="_honey"
+                type="text"
+                tabindex="-1"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-row">
+              <label for="contact-name">Nome *</label
+              ><input
+                id="contact-name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                required
+              /><small class="field-error"></small>
+            </div>
+            <div class="form-row">
+              <label for="contact-email">E-mail *</label
+              ><input
+                id="contact-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              /><small class="field-error"></small>
+            </div>
+            <div class="form-pair">
+              <div class="form-row">
+                <label for="contact-company">Empresa</label
+                ><input
+                  id="contact-company"
+                  name="company"
+                  type="text"
+                  autocomplete="organization"
+                />
+              </div>
+              <div class="form-row">
+                <label for="contact-type">Tipo de projeto *</label
+                ><select id="contact-type" name="projectType" required>
+                  <option value="">Selecione</option>
+                  <option>Landing Page</option>
+                  <option>Site Institucional</option>
+                  <option>Sistema Web</option>
+                  <option>Dashboard</option>
+                  <option>UI/UX</option>
+                  <option>Automação e Dados</option>
+                  <option>Outro</option></select
+                ><small class="field-error"></small>
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="contact-budget"
+                >Faixa de orçamento <span>(opcional)</span></label
+              ><select id="contact-budget" name="budget">
+                <option value="">Prefiro conversar primeiro</option>
+                <option>Até R$ 2.000</option>
+                <option>R$ 2.000 — R$ 5.000</option>
+                <option>R$ 5.000 — R$ 10.000</option>
+                <option>Acima de R$ 10.000</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="contact-message">Mensagem *</label
+              ><textarea
+                id="contact-message"
+                name="message"
+                rows="5"
+                required
+              ></textarea
+              ><small class="field-error"></small>
+            </div>
+            <button class="button button--primary" type="submit">
+              <span>Quero conversar</span><i aria-hidden="true">↗</i>
+            </button>
+            <p
+              class="form-status"
+              id="form-status"
+              role="status"
+              aria-live="polite"
+            ></p>
+            <p class="form-privacy">
+              Ao enviar, você concorda com o tratamento dos dados para resposta
+              ao contato.
+              <a href="privacidade.html">Leia a política de privacidade</a>.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell footer__grid">
+        <div class="footer__brand">
+          <a class="brand" href="#home"
+            ><img
+              data-brand-mark
+              src="assets/logo/bruno-mark-light.svg"
+              width="42"
+              height="42"
+              alt=""
+            /><span
+              ><strong>Bruno Lima</strong
+              ><small>Full Stack &amp; IA</small></span
+            ></a
+          >
+          <p>
+            Tecnologia, design e Inteligência Artificial para transformar
+            presença digital em crescimento real.
+          </p>
+        </div>
+        <div>
+          <h2>Navegação</h2>
+          <a href="#sobre">Sobre</a><a href="#tecnologias">Tecnologias</a
+          ><a href="#projetos">Projetos</a><a href="#servicos">Serviços</a
+          ><a href="#experiencia">Experiência</a
+          ><a href="privacidade.html">Privacidade</a>
+        </div>
+        <div>
+          <h2>Contato</h2>
+          <a href="#contato">Quero conversar pelo formulário ↗</a
+          ><span data-contact-text="location">RJ, Brasil</span
+          ><span data-contact-text="availability"
+            >Atendimento internacional</span
+          >
+        </div>
+        <div>
+          <h2>Redes sociais</h2>
+          <div class="footer__socials">
+            <a
+              data-contact-link="github"
+              href="https://github.com/Bruno-FullStack-AI"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub de Bruno Lima"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.55 9.55 0 0 1 12 6.82c.85 0 1.71.12 2.51.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86V21c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"
+                /></svg
+              ><span>GitHub</span></a
+            ><a
+              data-contact-link="linkedin"
+              href="https://www.linkedin.com/in/bruno-lima-fullstack-ia/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn de Bruno Lima"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M6.5 8.25H3.25V21H6.5V8.25ZM4.88 3A1.88 1.88 0 1 0 4.88 6.75 1.88 1.88 0 0 0 4.88 3ZM21 13.68c0-3.84-2.05-5.63-4.79-5.63-2.21 0-3.2 1.22-3.75 2.08V8.25H9.21V21h3.25v-6.31c0-1.66.31-3.27 2.38-3.27 2.04 0 2.07 1.91 2.07 3.38V21H21v-7.32Z"
+                /></svg
+              ><span>LinkedIn</span></a
+            ><a
+              data-contact-link="instagram"
+              href="https://www.instagram.com/brunolima.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram de Bruno Lima"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4.25" />
+                <circle cx="17.4" cy="6.7" r="1" class="is-filled" /></svg
+              ><span>Instagram</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="shell footer__bottom">
+        <p>
+          © <span id="current-year"></span> Bruno Lima. Todos os direitos
+          reservados.
+        </p>
+        <p>Desenvolvimento com IA, estratégia e propósito.</p>
+      </div>
+    </footer>
+
+    <a
+      class="whatsapp-float"
+      data-contact-link="whatsapp"
+      href="https://wa.me/5511999999999?text=Ol%C3%A1%20Bruno!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%20com%20IA."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Conversar com Bruno pelo WhatsApp"
+      ><span class="whatsapp-tip" role="status"
+        >Sua ideia tem potencial. Vamos conversar?</span
+      ><svg viewBox="0 0 32 32" aria-hidden="true">
+        <path
+          d="M16.04 3A12.82 12.82 0 0 0 5.17 22.62L3 29l6.6-2.1A12.85 12.85 0 1 0 16.04 3Zm0 23.52c-2.1 0-4.13-.62-5.87-1.78l-.42-.27-3.81 1.21 1.25-3.66-.3-.46a10.67 10.67 0 1 1 9.15 4.96Zm5.85-7.98c-.32-.16-1.9-.94-2.2-1.05-.29-.11-.5-.16-.71.16-.21.32-.82 1.05-1 1.26-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.58a9.58 9.58 0 0 1-1.78-2.22c-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.18.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.71-1.72-.98-2.35-.26-.62-.52-.54-.71-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.08-1.11 2.64s1.14 3.07 1.29 3.28c.16.21 2.24 3.42 5.42 4.79.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.9-.78 2.17-1.53.27-.75.27-1.4.19-1.53-.08-.14-.29-.22-.61-.38Z"
+        /></svg
+    ></a>
+    <button class="back-to-top" type="button" aria-label="Voltar ao topo">
+      ↑
+    </button>
+    <div class="context-cursor" aria-hidden="true"><span>Ver</span></div>
+
+    <dialog
+      class="project-modal"
+      id="project-modal"
+      aria-labelledby="modal-title"
+    >
+      <button
+        class="project-modal__close"
+        type="button"
+        aria-label="Fechar detalhes"
+      >
+        ×
+      </button>
+      <div class="project-modal__visual" id="modal-visual"></div>
+      <div class="project-modal__body">
+        <div class="project-modal__meta">
+          <span id="modal-category"></span><span id="modal-status"></span>
+        </div>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <div class="project-modal__columns">
+          <div>
+            <h3>Problema</h3>
+            <p id="modal-problem"></p>
+          </div>
+          <div>
+            <h3>Solução</h3>
+            <p id="modal-solution"></p>
+          </div>
+          <div>
+            <h3>Desafios</h3>
+            <p id="modal-challenges"></p>
+          </div>
+        </div>
+        <div class="project-modal__tech" id="modal-tech"></div>
+        <div class="project-modal__links" id="modal-links"></div>
+      </div>
+    </dialog>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://Bruno-FullStack-AI.github.io/Portfolio-2026-Bruno-Full-tack/sitemap.xml
